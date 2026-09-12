@@ -65,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 100px;
+    padding: 40px clamp(20px, 5vw, 100px);
     box-sizing: border-box;
     transition: opacity 0.8s ease;
 }
@@ -88,7 +88,7 @@ body {
 }
 /* ===== EL TÍTULO (h1) DENTRO DE CADA SECCIÓN ===== */
 .pantalla-completa h1 {
-    font-size: 48px; /* Tamaño de letra grande para el título */
+    font-size: clamp(28px, 6vw, 48px); /* Tamaño de letra grande para el título */
     text-transform: uppercase; /* Todo en MAYÚSCULAS */
     letter-spacing: 3px; /* Separa las letras para que se vea más elegante */
     margin-bottom: 20px; /* Espacio debajo del título, antes de lo que sigue */
