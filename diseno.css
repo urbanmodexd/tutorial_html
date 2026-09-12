@@ -1,0 +1,180 @@
+/* ===== ESTILOS GENERALES DEL CUERPO DE LA PÁGINA ===== */
+body {
+    background-color: #0a0a0a; /* Color de fondo casi negro para toda la página */
+    font-family: Arial, sans-serif; /* Tipo de letra que se usa en todo el texto */
+    color: #e0e0e0; /* Color de texto por defecto: gris muy claro */
+    margin: 0; /* Quita el espacio en blanco que el navegador pone por defecto alrededor de la página */
+    padding: 0; /* Quita el espacio interno que el navegador agrega por defecto */
+}
+
+/* ===== MENÚ LATERAL (la caja que contiene toda la lista de enlaces) ===== */
+.menu-lateral {
+    position: fixed; /* El menú se queda pegado en su lugar aunque hagas scroll */
+    left: 30px; /* Separación de 30 pixeles desde el borde izquierdo de la pantalla */
+    top: 50%; /* Coloca el menú empezando a la mitad de la altura de la pantalla */
+    transform: translateY(-50%); /* Lo sube la mitad de su propia altura, para quedar perfectamente centrado verticalmente */
+    z-index: 10; /* Hace que el menú se dibuje ENCIMA de las demás cosas de la página, para que no se lo tapen */
+}
+
+/* ===== LA LISTA (ul) DENTRO DEL MENÚ ===== */
+.menu-lateral ul {
+    list-style: none; /* Quita los puntitos que traen las listas por defecto */
+    margin: 0; /* Sin espacio extra afuera de la lista */
+    padding: 0; /* Sin espacio extra adentro de la lista */
+    border-left: 1px solid #444; /* Línea delgada gris a la izquierda, como una guía vertical */
+}
+
+/* ===== CADA ELEMENTO (li) DE LA LISTA, O SEA CADA ENLACE ===== */
+.menu-lateral li {
+    padding: 12px 0 12px 15px; /* Espacio interno: 12px arriba, 0 a la derecha, 12px abajo, 15px a la izquierda */
+}
+
+/* ===== EL TEXTO DEL ENLACE (a) DENTRO DE CADA li ===== */
+.menu-lateral a {
+    color: #888; /* Color gris para los enlaces cuando NO les pasas el mouse encima */
+    text-decoration: none; /* Quita el subrayado que traen los enlaces por defecto */
+    font-size: 12px; /* Tamaño de letra pequeño */
+    letter-spacing: 1px; /* Separa un poquito las letras entre sí */
+    text-transform: uppercase; /* Convierte el texto a MAYÚSCULAS aunque lo escribas normal */
+    display: flex; /* Acomoda el número y el texto en la misma línea, uno junto al otro */
+    align-items: center; /* Centra verticalmente el número y el texto entre sí */
+    gap: 8px; /* Espacio de 8 pixeles entre el número y el texto */
+}
+
+/* ===== QUÉ PASA CUANDO PONES EL MOUSE ENCIMA DE UN ENLACE DEL MENÚ ===== */
+.menu-lateral a:hover {
+    color: #fff; /* El texto se pone blanco (más visible) al pasar el mouse */
+}
+
+/* ===== EL NÚMERO (01, 02, 03...) DE CADA ENLACE ===== */
+.numero {
+    color: #f49804; /* Color naranja para que resalte */
+    font-weight: bold; /* Letra en negrita */
+}
+
+.pantalla-completa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 100px;
+    box-sizing: border-box;
+    transition: opacity 0.8s ease;
+}
+/* ===== LA QUE SE MUESTRA AL DAR CLIC EN EL MENÚ ===== */
+.pantalla-completa:target {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+/* ===== "¿QUÉ ES HTML?" SE MUESTRA DE ENTRADA, AUNQUE NO HAYAS DADO CLIC EN NADA ===== */
+#estructura {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #0a0a0a;
+}
+
+#formato-texto {
+    background-color: #f0f0f4;
+}
+/* ===== EL TÍTULO (h1) DENTRO DE CADA SECCIÓN ===== */
+.pantalla-completa h1 {
+    font-size: 48px; /* Tamaño de letra grande para el título */
+    text-transform: uppercase; /* Todo en MAYÚSCULAS */
+    letter-spacing: 3px; /* Separa las letras para que se vea más elegante */
+    margin-bottom: 20px; /* Espacio debajo del título, antes de lo que sigue */
+    background: linear-gradient(90deg, #f40404, #fff, #080808); /* Crea una franja de color: naranja, blanco, naranja, en línea horizontal (90deg) */
+    background-size: 200% auto; /* Hace la franja el doble de ancha que el texto, para que tenga espacio de sobra al moverse */
+    -webkit-background-clip: text; /* (Para navegadores tipo Chrome/Safari) recorta el fondo con la forma exacta de las letras */
+    -webkit-text-fill-color: transparent; /* (Para esos mismos navegadores) hace el texto transparente para que se vea el fondo de atrás */
+    background-clip: text; /* Versión estándar del recorte, para navegadores más nuevos */
+    animation: aparecer 1s ease-out, brillo 4s linear infinite; /* Aplica dos animaciones: "aparecer" (una vez) y "brillo" (en bucle) */
+}
+
+/* ===== ANIMACIÓN "aparecer": el título sube y se hace visible al cargar la página ===== */
+@keyframes aparecer {
+    from {
+        opacity: 0; /* Al inicio, totalmente invisible */
+        transform: translateY(30px); /* Al inicio, 30 pixeles más abajo de su posición normal */
+    }
+    to {
+        opacity: 1;                       /* Al final, totalmente visible */
+        transform: translateY(0);                /* Al final, en su posición normal */
+    }
+}
+
+/* ===== ANIMACIÓN "brillo": mueve la franja de color de lado a lado, sin parar ===== */
+@keyframes brillo {
+    0% {
+        background-position: 0% center; /* Al empezar el ciclo, la franja empieza desde la izquierda */
+    }
+    100% {
+        background-position: 200% center; /* Al terminar el ciclo, la franja se movió hasta el final (y vuelve a empezar) */
+    }
+}
+
+/* ===== LA LÍNEA HORIZONTAL (hr) DEBAJO DEL TÍTULO ===== */
+.pantalla-completa hr {
+    border: none; /* Quita el borde feo que trae por defecto */
+    border-top: 1px solid #444; /* Le pone una línea delgada gris arriba, esa es la que se ve */
+    width: 80px; /* La línea mide solo 80 pixeles de ancho (corta, no toda la pantalla) */
+    margin: 20px auto; /* 20px de espacio arriba/abajo, y "auto" a los lados para que quede centrada */
+    animation: aparecer 1.2s ease-out; 
+}
+
+.parrafo-info {
+    background-color: #f0f0f4;
+    padding: 25px;
+    border-radius: 4px;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #060606;
+    animation: aparecer 1.2s ease-out;    /* Usa la receta "aparecer" que ya tienes, dura 1.2 segundos, una sola vez */
+}
+/* Estado normal: la sección se ve completamente normal */
+.pantalla-completa {
+    filter: blur(0);
+    transform: scale(1) skewY(0deg);
+}
+
+/* Cuando la sección se vuelve el "objetivo" de la URL (le diste clic en el menú) */
+.pantalla-completa:target {
+    animation: emerger 1.2s ease-out;
+}
+
+/* La animación: empieza borrosa e inclinada, y se asienta */
+@keyframes emerger {
+    from {
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(0.96) skewY(2deg);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1) skewY(0deg);
+    }
+}
+#estructura {
+    background-color: #0a0a0a;
+}
+
+#formato-texto {
+    background-color: #f0f0f4;
+}
+
+/* Cuando das clic en el menú y una sección se vuelve el "target" de la URL, se muestra */
+.pantalla-completa:target {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 5;
+}
