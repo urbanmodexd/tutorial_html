@@ -4,58 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
-
+    <link rel="stylesheet" href="diseno.css"> 
 </head>
 <body>
 
- <link rel="stylesheet" href="diseno.css">
-
-   <nav class="menu-lateral">
+<nav class="menu-horizontal">
     <ul>
-        <li><a href="#estructura"><span class="numero">01</span> Estructura básica</a></li>
-        <li><a href="#formato-texto"><span class="numero">02</span> Formato de texto</a></li>
-        <li><a href="#caracteres"><span class="numero">03</span> Caracteres especiales</a></li>
-        <li><a href="#enlaces"><span class="numero">04</span> Enlaces</a></li>
-        <li><a href="#imagenes"><span class="numero">05</span> Imágenes</a></li>
-        <li><a href="#imagenes-alineacion"><span class="numero">06</span> Alineación de imágenes</a></li>
-        <li><a href="#fondos-colores"><span class="numero">07</span> Fondos y colores</a></li>
-        <li><a href="#tablas"><span class="numero">08</span> Tablas</a></li>
-        <li><a href="#formularios"><span class="numero">09</span> Formularios</a></li>
-        <li><a href="#mapas"><span class="numero">10</span> Mapas</a></li>
-        <li><a href="#frames"><span class="numero">11</span> Frames</a></li>
-        <li><a href="#sonidos"><span class="numero">12</span> Sonidos</a></li>
+        <li><a href="#estructura">Estructura básica</a></li>
+        <li><a href="#formato-texto">Formato de texto</a></li>
+        <li><a href="#caracteres">Caracteres especiales</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#imagenes-alineacion">Alineación de imágenes</a></li>
+        <li><a href="#fondos-colores">Fondos y colores</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#mapas">Mapas</a></li>
+        <li><a href="#frames">Frames</a></li>
+        <li><a href="#sonidos">Sonidos</a></li>
     </ul>
 </nav>
 
 <section id="estructura" class="pantalla-completa">
     <h1>¿Qué es HTML?</h1>
     <hr>
-    <p class="parrafo-info">
-        HTML significa HyperText Markup Language <b>(Lenguaje de Marcado de Hipertexto).</b>
-        Es el lenguaje que se usa para crear la estructura y el contenido de las páginas web
-        (títulos, párrafos, imágenes, enlaces, etc.), usando etiquetas como h1, p, a, entre otras.
-        No es un lenguaje de programación, es de marcado: solo describe el contenido, no tiene lógica.
-        Para el diseño se usa CSS y para la interactividad, JavaScript.
-    </p>
-    <img src="imagenes.jpng/Estructura-HTML.jpg"  width="300">
-     
-    <section id="formato-texto" class="pantalla-completa">
-    <h1>Formato de texto</h1>
-    <hr>
-    <p class="parrafo-info">
-        Para darle forma al texto usamos etiquetas como <b>&lt;b&gt;</b> (negrita) y
-        <i>&lt;i&gt;</i> (cursiva). Los títulos van del <b>&lt;h1&gt;</b> (el más grande)
-        al <b>&lt;h6&gt;</b> (el más chico). Para separar párrafos se usa <b>&lt;p&gt;</b>,
-        y para saltar de línea sin dejar espacio en blanco, <b>&lt;br&gt;</b>.
-        <br><br>
-        Ejemplo:<br>
-        <b>Esto está en negrita.</b><br>
-        <i>Esto está en cursiva.</i><br>
-    </p>
-    <a href="https://youtu.be/DwwIwC0Gfsk" target="_blank">Ver video en YouTube</a>
-     <img src="imagenes.jpng/IMAGEN.webp"  width="300">
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+             HTML significa HyperText Markup Language, que en español significa Lenguaje de Marcado de Hipertexto. Es el lenguaje que se utiliza para crear y organizar la estructura de una página web. Con HTML se puede colocar y ordenar contenido como textos, títulos, imágenes, enlaces, videos, listas y formularios. La historia de HTML comenzó a finales de la década de 1980, cuando Tim Berners-Lee, un científico que trabajaba en el CERN, propuso un sistema para compartir información entre investigadores mediante documentos conectados por enlaces. En 1991 se publicó la primera versión de HTML, junto con la idea de la World Wide Web, que permitió consultar documentos mediante Internet. Con el paso de los años, HTML fue evolucionando y se fueron agregando nuevas características para crear páginas web más completas. Posteriormente surgieron diferentes versiones y estándares, hasta llegar a HTML5, que incorporó elementos para trabajar de una manera más moderna con contenido multimedia, formularios y diferentes tipos de información. HTML no es un lenguaje de programación, sino un lenguaje de marcado, ya que su función principal es definir la estructura y organización del contenido de una página. Para complementar HTML se utiliza CSS, que se encarga del diseño y la apariencia, y JavaScript, que permite agregar interactividad y funciones. Actualmente, HTML es una de las bases fundamentales del desarrollo web y se utiliza prácticamente en todo tipo de páginas y sitios de Internet.
+        </p>
+        <img src="imagenes.jpng/Estructura-HTML.jpg" width="500" alt="Estructura de un documento HTML">
+    </div>
 </section>
 
+<section id="formato-texto" class="pantalla-completa">
+    <h1>Formato de texto</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            El formato de texto en HTML permite modificar la apariencia y el significado de las palabras dentro de un documento. Existen etiquetas que cambian solo el aspecto visual, como &lt;b&gt; para negrita e &lt;i&gt; para cursiva, y etiquetas equivalentes con significado semántico, como &lt;strong&gt; para resaltar importancia y &lt;em&gt; para dar énfasis, que hoy en día son las más recomendadas. También existen otras etiquetas útiles como &lt;u&gt; para subrayar, &lt;mark&gt; para resaltar texto como si fuera marcatextos, &lt;small&gt; para texto más pequeño, &lt;del&gt; para texto tachado y &lt;sub&gt; o &lt;sup&gt; para subíndices y superíndices. Estas etiquetas permiten dar estructura visual y semántica al contenido sin necesidad de usar CSS.
+        </p>
+        <img src="imagenes.jpng/Captura de pantalla_20260912_174735.png" width="600" alt="texto en HTML">
+    </div>
+    <a href="https://youtu.be/DwwIwC0Gfsk" target="_blank">Ver video en YouTube</a>
+</section>
 
-   
+<section id="caracteres" class="pantalla-completa">
+    <h1>Características espaciales</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            hola
+        </p>
+    </div>
+</section>
+
+<section id="enlaces" class="pantalla-completa">
+    <h1>Enlaces</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            hola
+        </p>
+    </div>
+</section>
+
+</body>
 </html>
