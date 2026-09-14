@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
-    <link rel="stylesheet" href="diseno.css"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial de HTML</title>
+<link rel="stylesheet" href="diseno.css">
 </head>
 <body>
 
@@ -20,41 +20,63 @@
         <li><a href="#tablas">Tablas</a></li>
         <li><a href="#formularios">Formularios</a></li>
         <li><a href="#mapas">Mapas</a></li>
-        <li><a href="#frames">Frames</a></li>
         <li><a href="#sonidos">Sonidos</a></li>
     </ul>
 </nav>
+
+<main>
 
 <section id="estructura" class="pantalla-completa">
     <h1>¿Qué es HTML?</h1>
     <hr>
     <div class="contenido-lado-a-lado">
         <p class="parrafo-info">
-             HTML significa HyperText Markup Language, que en español significa Lenguaje de Marcado de Hipertexto. Es el lenguaje que se utiliza para crear y organizar la estructura de una página web. Con HTML se puede colocar y ordenar contenido como textos, títulos, imágenes, enlaces, videos, listas y formularios. La historia de HTML comenzó a finales de la década de 1980, cuando Tim Berners-Lee, un científico que trabajaba en el CERN, propuso un sistema para compartir información entre investigadores mediante documentos conectados por enlaces. En 1991 se publicó la primera versión de HTML, junto con la idea de la World Wide Web, que permitió consultar documentos mediante Internet. Con el paso de los años, HTML fue evolucionando y se fueron agregando nuevas características para crear páginas web más completas. Posteriormente surgieron diferentes versiones y estándares, hasta llegar a HTML5, que incorporó elementos para trabajar de una manera más moderna con contenido multimedia, formularios y diferentes tipos de información. HTML no es un lenguaje de programación, sino un lenguaje de marcado, ya que su función principal es definir la estructura y organización del contenido de una página. Para complementar HTML se utiliza CSS, que se encarga del diseño y la apariencia, y JavaScript, que permite agregar interactividad y funciones. Actualmente, HTML es una de las bases fundamentales del desarrollo web y se utiliza prácticamente en todo tipo de páginas y sitios de Internet.
+            HTML significa HyperText Markup Language, que en español significa Lenguaje de Marcado de Hipertexto. Es el lenguaje que se utiliza para crear y organizar la estructura de una página web. Con HTML se puede colocar y ordenar contenido como textos, títulos, imágenes, enlaces, videos, listas y formularios. La historia de HTML comenzó a finales de la década de 1980, cuando Tim Berners-Lee, un científico que trabajaba en el CERN, propuso un sistema para compartir información entre investigadores mediante documentos conectados por enlaces. En 1991 se publicó la primera versión de HTML, junto con la idea de la World Wide Web, que permitió consultar documentos mediante Internet. Con el paso de los años, HTML fue evolucionando y se fueron agregando nuevas características para crear páginas web más completas. Posteriormente surgieron diferentes versiones y estándares, hasta llegar a HTML5, que incorporó elementos para trabajar de una manera más moderna con contenido multimedia, formularios y diferentes tipos de información. HTML no es un lenguaje de programación, sino un lenguaje de marcado, ya que su función principal es definir la estructura y organización del contenido de una página. Para complementar HTML se utiliza CSS, que se encarga del diseño y la apariencia, y JavaScript, que permite agregar interactividad y funciones. Actualmente, HTML es una de las bases fundamentales del desarrollo web y se utiliza prácticamente en todo tipo de páginas y sitios de Internet.
         </p>
-        <img src="imagenes.jpng/Estructura-HTML.jpg" width="500" alt="Estructura de un documento HTML">
+        <img src="imagenes.jpng/pascualhello.png" width="380" height="240">
     </div>
+    
 </section>
 
 <section id="formato-texto" class="pantalla-completa">
     <h1>Formato de texto</h1>
-    <hr>
+
     <div class="contenido-lado-a-lado">
         <p class="parrafo-info">
             El formato de texto en HTML permite modificar la apariencia y el significado de las palabras dentro de un documento. Existen etiquetas que cambian solo el aspecto visual, como &lt;b&gt; para negrita e &lt;i&gt; para cursiva, y etiquetas equivalentes con significado semántico, como &lt;strong&gt; para resaltar importancia y &lt;em&gt; para dar énfasis, que hoy en día son las más recomendadas. También existen otras etiquetas útiles como &lt;u&gt; para subrayar, &lt;mark&gt; para resaltar texto como si fuera marcatextos, &lt;small&gt; para texto más pequeño, &lt;del&gt; para texto tachado y &lt;sub&gt; o &lt;sup&gt; para subíndices y superíndices. Estas etiquetas permiten dar estructura visual y semántica al contenido sin necesidad de usar CSS.
         </p>
-        <img src="imagenes.jpng/Captura de pantalla_20260912_174735.png" width="600" alt="texto en HTML">
+        <img src="imagenes.jpng/pascualmodelo.jpeg" width="380" height="240">
     </div>
-    <a href="https://youtu.be/DwwIwC0Gfsk" target="_blank">Ver video en YouTube</a>
+    <div class="demo demo-texto">
+        <p><b>Esta línea usa la etiqueta b, negrita solo visual.</b></p>
+        <p><strong>Esta línea usa la etiqueta strong, negrita con importancia.</strong></p>
+        <p><i>Esta línea usa la etiqueta i, cursiva solo visual.</i></p>
+        <p><em>Esta línea usa la etiqueta em, cursiva con énfasis.</em></p>
+        <p><u>Esta línea usa la etiqueta u, texto subrayado.</u></p>
+        <p><mark>Esta línea usa la etiqueta mark, texto resaltado.</mark></p>
+        <p><small>Esta línea usa la etiqueta small, texto más pequeño.</small></p>
+        <p><del>Esta línea usa la etiqueta del, texto tachado.</del></p>
+        <p>El agua es H<sub>2</sub>O y dos elevado a tres es 2<sup>3</sup>, usando sub y sup.</p>
+    </div>
+    <a class="enlace-boton" href="https://youtu.be/DwwIwC0Gfsk" target="_blank" rel="noopener">Ver video en YouTube</a>
 </section>
 
 <section id="caracteres" class="pantalla-completa">
-    <h1>Características espaciales</h1>
+    <h1>Caracteres especiales</h1>
     <hr>
     <div class="contenido-lado-a-lado">
         <p class="parrafo-info">
-            hola
+            Algunos caracteres tienen un significado especial en HTML, como los símbolos &lt; y &gt;, usados para las etiquetas. Para poder escribirlos como texto normal, sin que el navegador los confunda con una etiqueta, existen códigos especiales llamados entidades HTML. Cada entidad empieza con el símbolo & y termina con punto y coma.
         </p>
+    </div>
+    <div class="demo demo-caracteres">
+        <p><code>&amp;lt;</code> se escribe como código y se muestra como: &lt;</p>
+        <p><code>&amp;gt;</code> se escribe como código y se muestra como: &gt;</p>
+        <p><code>&amp;amp;</code> se escribe como código y se muestra como: &amp;</p>
+        <p><code>&amp;quot;</code> se escribe como código y se muestra como: &quot;</p>
+        <p><code>&amp;ntilde;</code> se escribe como código y se muestra como: &ntilde;</p>
+        <p><code>&amp;copy;</code> se escribe como código y se muestra como: &copy;</p>
+        <p><code>&amp;nbsp;</code> sirve para forzar espacios: aquí&nbsp;&nbsp;&nbsp;&nbsp;hay varios espacios seguidos.</p>
     </div>
 </section>
 
@@ -63,10 +85,162 @@
     <hr>
     <div class="contenido-lado-a-lado">
         <p class="parrafo-info">
-            hola
+            Los enlaces se crean con la etiqueta a y el atributo href, que indica a dónde lleva el enlace. Pueden apuntar a otra página, a un sitio externo, a una sección dentro de la misma página o a una dirección de correo electrónico. El atributo target con el valor _blank hace que el enlace se abra en una pestaña nueva.
         </p>
     </div>
+    <div class="demo demo-enlaces">
+        <p><a href="https://youtu.be/BtLSaxRnIhc?si=3ZqwPU4BS0VRQuNu" target="_blank" rel="noopener">Enlace externo a Wikipedia, se abre en pestaña nueva</a></p>
+        <p><a href="#sonidos">Enlace interno que lleva a la sección Sonidos</a></p>
+        <p><a href="https://www.revistamoi.com/variedat/por-que-odiamos-a-algunos-maestros/">Enlace para enviar un correo electrónico</a></p>
+        <p><a class="enlace-boton" href="https://youtu.be/DwwIwC0Gfsk" target="_blank" rel="noopener">Enlace, hecho con CSS </a></p>
+    </div>
 </section>
+
+<section id="imagenes" class="pantalla-completa">
+    <h1>Imágenes</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            Las imágenes se insertan con la etiqueta img, que no lleva etiqueta de cierre. El atributo src indica la ruta del archivo, alt describe la imagen por si no carga o para personas con lectores de pantalla, y width y height controlan su tamaño en pixeles.
+        </p>
+    </div>
+    <div class="demo demo-imagenes">
+        <img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg"  width="320" height="200">
+        <img src="imagenes.jpng/pascualmodelo.jpeg" width="320" height="200">
+    </div>
+</section>
+
+<section id="imagenes-alineacion" class="pantalla-completa">
+    <h1>Alineación de imágenes</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            Con la propiedad float de CSS una imagen se puede alinear a la izquierda o a la derecha, haciendo que el texto la rodee. También se puede centrar una imagen usando margin auto en un elemento de bloque.
+        </p>
+    </div>
+    <div class="demo demo-alineacion">
+        <div class="alineacion-ejemplo">
+            <img class="alineacion-ejemplo__imagen alineacion-ejemplo__imagen--izquierda" src="imagenes/icono.png" alt="Icono alineado a la izquierda" width="110" height="110">
+            <p>Esta imagen está alineada a la izquierda usando float izquierda en CSS, por eso el texto de este párrafo la rodea por el lado derecho, acomodándose alrededor de ella de forma natural.</p>
+        </div>
+        <div class="alineacion-ejemplo">
+            <img class="alineacion-ejemplo__imagen alineacion-ejemplo__imagen--derecha" src="imagenes/icono.png" alt="Icono alineado a la derecha" width="110" height="110">
+            <p>Esta imagen está alineada a la derecha usando float derecha en CSS, por eso el texto de este párrafo la rodea por el lado izquierdo en vez del derecho.</p>
+        </div>
+        <img class="alineacion-ejemplo__imagen alineacion-ejemplo__imagen--centro" src="imagenes/icono.png" alt="Icono centrado" width="110" height="110">
+    </div>
+</section>
+
+<section id="fondos-colores" class="pantalla-completa">
+    <h1>Fondos y colores</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            Con CSS se puede cambiar el color de fondo y de texto de cualquier elemento, usar imágenes de fondo, degradados entre varios colores, colores con transparencia, bordes y sombras. A continuación hay un ejemplo real de cada uno, perdon si son colores feos, pero estoy aprendiendo igual jsjs 
+        </p>
+    </div>
+    <div class="demo-colores__grid">
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--fondo">Color de fondo</div>
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--texto">Color de texto</div>
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--degradado">Degradado</div>
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--transparencia">Transparencia</div>
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--borde">Borde</div>
+        <div class="demo-colores__tarjeta demo-colores__tarjeta--sombra">Sombra</div>
+    </div>
+</section>
+
+<section id="tablas" class="pantalla-completa">
+    <h1>Tablas</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            Las tablas se construyen con la etiqueta table, las filas con tr, los encabezados con th y las celdas con td. Los atributos colspan y rowspan permiten que una celda ocupe varias columnas o varias filas.
+        </p>
+    </div>
+    <table class="tabla-demo">
+        <HTML> <HEAD> <TITLE>  </TITLE> </HEAD> <BODY> <TABLE BORDER> <TR> <TH><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TH><TH><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TH><TH><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TH> <TD><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TD><TD><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TD><TD><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TD> </TR> <TR> <TD><img src="imagenes.jpng/pascualmodelo.jpeg" width="320" height="200"></TD><TD><img src="imagenes.jpng/ccf774a2-4ada-499c-a0c5-586c1be994db.jpeg" width="320" height="200"></TD><TD><img src="imagenes.jpng/pascualhello.png" width="320" height="200"></TD> </TR> </TABLE> <BR>  [Aquí van las etiquetas que visualizan la página] </BODY> </HTML>
+</section>
+
+<section id="formularios" class="pantalla-completa">
+<h1>Formularios</h1>
+<div class="contenido-lado-a-lado">
+ <p class="parrafo-info">
+Los formularios permiten que el usuario introduzca información usando etiquetas como input, select y textarea. HTML incluye validación nativa mediante atributos como required, placeholder, min y max, sin necesitar JavaScript.
+</p>
+</div>
+<form class="formulario-demo" action="#">
+        <fieldset class="formulario-demo__grupo">
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" placeholder="Ej. 18">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres">
+        </fieldset>
+
+        <fieldset class="formulario-demo__grupo">
+            <legend>Preferencias</legend>
+            <p>¿Cuál es tu nivel en HTML?</p>
+            <label class="formulario-demo__opcion"><input type="radio" name="nivel" value="principiante" checked> Principiante</label>
+            <label class="formulario-demo__opcion"><input type="radio" name="nivel" value="intermedio"> Intermedio</label>
+            <label class="formulario-demo__opcion"><input type="radio" name="nivel" value="avanzado"> Avanzado</label>
+
+            <label class="formulario-demo__opcion"><input type="checkbox" name="terminos" required> Acepto recibir información sobre el curso</label>
+
+            <label for="tema">¿Que tema te gusto mas?</label>
+            <select id="tema" name="tema">
+                <option value="estructura">Estructura básica</option>
+                <option value="formularios">Formularios</option>
+                <option value="tablas">Tablas</option>
+                <option value="sonidos">Sonidos</option>
+            </select>
+            <hr>
+
+        <button type="submit">Enviar formulario</button>
+    </form>
+</section>
+
+<section id="mapas" class="pantalla-completa">
+    <h1>Mapas</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            Sin usar JavaScript ni librerías externas, se puede incrustar un mapa real dentro de una página usando un iframe, que carga otra página web dentro de un recuadro de nuestra propia página.
+        </p>
+    </div>
+    <iframe 
+  src="https://www.google.com/maps?q=19.0424561,-98.135748&hl=es&z=17&output=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</section>
+
+<section id="sonidos" class="pantalla-completa">
+    <h1>Sonidos</h1>
+    <hr>
+    <div class="contenido-lado-a-lado">
+        <p class="parrafo-info">
+            La etiqueta audio permite reproducir sonido directamente en la página. Con el atributo controls, el navegador muestra automáticamente los botones de reproducir, pausar y ajustar el volumen, sin necesitar JavaScript.
+        </p>
+    </div>
+    <audio class="audio-demo" controls>
+        <source src="Bartolito era un gallo que vivía muy feliz [tUiyM-Q5XIY].mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</section>
+
+</main>
 
 </body>
 </html>
