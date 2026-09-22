@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    
 <nav class="menu-horizontal">
     <ul>
         <li><a href="#estructura">Estructura básica</a></li>
@@ -20,6 +21,7 @@
         <li><a href="#tablas">Tablas</a></li>
         <li><a href="#formularios">Formularios</a></li>
         <li><a href="#mapas">Mapas</a></li>
+        <li><a href="#frames">Frames</a></li>
         <li><a href="#sonidos">Sonidos</a></li>
     </ul>
 </nav>
@@ -215,6 +217,23 @@ Los formularios permiten que el usuario introduzca información usando etiquetas
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+</section>
+
+<section id="frames" class="pantalla-completa">
+    
+<h1>Frames</h1>
+<hr>
+<div class="contenido-lado-a-lado">
+    <p class="parrafo-info">
+        Los frames sirven para dividir la pantalla en varias zonas, o ventanas, que actúan de forma independiente, como si fueran páginas distintas. En vez de la etiqueta BODY se usa FRAMESET, que define cuántos frames va a haber y si se acomodan en columnas o en filas. Cada frame se define con la etiqueta FRAME, y con el atributo SRC se indica qué documento HTML se va a cargar en él. El atributo TARGET se usa dentro de un enlace para indicar que, al hacer clic, el contenido no se cargue en el mismo frame donde está el enlace, sino en otro frame distinto.
+    </p>
+</div>
+<div class="demo demo-texto">
+    <p><code>&lt;FRAMESET COLS="20%,80%"&gt;</code> divide la pantalla en dos columnas, una del 20% y otra del 80%.</p>
+    <p><code>&lt;FRAME SRC="mi_indice.html"&gt;</code> carga el documento mi_indice.html dentro de ese frame.</p>
+    <p><code>&lt;FRAME SRC="mi_presentacion.html" NAME="principal"&gt;</code> carga otro documento y le pone el nombre "principal" para poder ser el destino de un enlace.</p>
+    <p><code>TARGET="principal"</code> dentro de un enlace hace que ese enlace cargue su página en el frame llamado "principal".</p>
+</div>
 
 </section>
 

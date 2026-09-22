@@ -265,24 +265,6 @@ textarea:focus-visible {
     color: var(--color-acento-claro);
 }
 
-.demo-estructura {
-    max-width: 700px;
-    font-family: monospace;
-    font-size: 14px;
-}
-
-.demo-estructura__etiqueta {
-    color: var(--color-acento-claro);
-    display: block;
-    margin-top: 8px;
-}
-
-.demo-estructura__caja {
-    border-left: 2px solid rgba(255, 255, 255, 0.25);
-    padding-left: 18px;
-    margin: 8px 0 8px 6px;
-}
-
 .demo-caracteres code {
     background-color: rgba(255, 255, 255, 0.12);
     padding: 2px 8px;
@@ -431,12 +413,6 @@ textarea:focus-visible {
     font-size: 14px;
 }
 
-.formulario-demo__opcion {
-    display: block;
-    margin-top: 8px;
-    font-size: 14px;
-}
-
 .formulario-demo input[type="text"],
 .formulario-demo input[type="email"],
 .formulario-demo input[type="number"],
@@ -465,14 +441,6 @@ textarea:focus-visible {
 .formulario-demo button:hover {
     background-color: var(--color-acento-claro);
     color: var(--color-texto-oscuro);
-}
-
-.iframe-demo {
-    width: 100%;
-    max-width: 700px;
-    height: 350px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
 }
 
 .audio-demo {
